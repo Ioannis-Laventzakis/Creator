@@ -19,13 +19,13 @@ public class Creator {
             this.strength *= 3;
         } else if (role.equals("Wizard")) {
             this.magic *= 2;
-        } else if (role.equals("Potato")) {
+        } else if (role.equals("Priest")) {
             this.health *= 10;
         }
     }
 
     private String generateRandomRole() {
-        String[] roles = {"Warrior", "Wizard", "Potato"};
+        String[] roles = {"Warrior", "Wizard", "Priest"};
         Random random = new Random();
         return roles[random.nextInt(roles.length)];
     }
