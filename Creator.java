@@ -37,13 +37,14 @@ public class Creator {
 
     @Override
     public String toString() {
-        return "Character{" +
-                "name='" + name + '\'' +
-                ", role='" + role + '\'' +
-                ", health=" + health +
-                ", strength=" + strength +
-                ", magic=" + magic +
-                '}';
+        return "-----------------------------------------\n" +
+                "Welcome to the character generator!\n" +
+                name + " is.... a " + role + "!\n\n" +
+                "\tStrength: " + strength + "\n" +
+                "\tMagic: " + magic + "\n" +
+                "\tHealth: " + health + "\n\n" +
+                "Happy adventuring!\n" +
+                "-----------------------------------------";
     }
 
     public static void main(String[] args) {
@@ -56,7 +57,6 @@ public class Creator {
         Creator character = new Creator(characterName);
 
         // Display character information
-        System.out.println("Generated character:");
         System.out.println(character);
     }
 }
