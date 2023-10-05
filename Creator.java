@@ -14,7 +14,7 @@ public class Creator {
         this.strength = generateRandomStat();
         this.magic = generateRandomStat();
 
-        // Adjust stats based on the role
+
         if (role.equals("Warrior")) {
             this.strength *= 10;
         } else if (role.equals("Wizard")) {
@@ -56,7 +56,7 @@ public class Creator {
         String characterName = args[0];
         Creator character = new Creator(characterName);
 
-        // Display character information
+
         System.out.println(character);
     }
 }
