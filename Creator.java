@@ -16,11 +16,17 @@ public class Creator {
 
         // Adjust stats based on the role
         if (role.equals("Warrior")) {
-            this.strength *= 3;
-        } else if (role.equals("Wizard")) {
-            this.magic *= 2;
-        } else if (role.equals("Priest")) {
+            this.strength *= 10;
             this.health *= 10;
+            this.magic *= 4;
+        } else if (role.equals("Wizard")) {
+            this.magic *= 10;
+            this.health *= 2;
+            this.strength *= 4;
+        } else if (role.equals("Priest")) {
+            this.strength *= 10;
+            this.health *= 10;
+            this.magic *= 4;
         }
     }
 
