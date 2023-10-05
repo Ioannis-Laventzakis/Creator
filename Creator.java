@@ -18,9 +18,9 @@ public class Creator {
         if (role.equals("Warrior")) {
             this.strength *= 3;
         } else if (role.equals("Wizard")) {
-            this.magic *= 3;
+            this.magic *= 2;
         } else if (role.equals("Potato")) {
-            this.health *= 3;
+            this.health *= 10;
         }
     }
 
